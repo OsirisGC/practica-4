@@ -1,0 +1,341 @@
+/* <--    Bordes   --> */
+body{
+    margin: 0 15vh;
+    background: rgb(0, 0, 0);
+    padding: 0;
+    border: 0;
+}
+/* <--    primera ventana   --> */
+#main{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    position: center;
+}
+/* <--    Contenido Columna izquierda   --> */
+.container{
+    min-width: 40vh;
+    max-height: 100vh;
+    background: bla ;
+    display: flex;
+    padding: 2vh 0;
+    font-family: Arial,monospace;
+    font-size: 1.5vh;
+    color: rgb(255, 255, 255);
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.news{
+    width: 39%;
+    height: 100vh;
+    background: bla;
+    border: 3px solid rgb(255, 255, 255);
+    border-bottom:0 ;
+    border-top:0 ;
+
+}
+
+/* <--    columna derecha   --> */
+
+.search{
+    width: 30%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* <--    barra de busqueda   --> */
+
+.search .tab{
+    background: #000000;
+    margin-top: 30px ;
+    border-radius: 50vh;
+    width: 90%;
+    height: 8%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vh;
+}
+
+.search h3{
+    font-family: Arial,monospace;
+    color: #ffffff;
+    font-size: 2vh;
+}
+
+.search h1{
+    font-family: Arial,monospace;
+    color: #ffffff;
+    font-size: 4vh;
+    margin: 1vh  5vh;
+}
+.search .searchIcon{
+    width: 4vh;
+    margin-left:5vh ;
+}
+
+.search .qep{
+    background: #151515;
+    margin-top: 100px ;
+    border-radius: 5vh;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3vh;
+}
+.search .aqs{
+    background: #151515;
+    margin: 50px 0 ;
+    border-radius: 5vh;
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3vh;
+}
+.info{
+    width: 100%;
+    height: 20%;
+    background: #151515;
+    margin-top: 1.5vh;
+    display: flex;
+}
+.info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info h1,h2,h4{
+    color: rgb(255, 255, 255);
+    margin: 0 0 0 2vh;
+    font-family: Arial,monospace;
+}
+.info h1{
+    font-size: 2.5vh;
+}
+.info h4{
+    font-size: 1.5vh;
+}
+.info h2{
+    font-size: 2vh;
+    color: #565656;
+}
+
+.info .cubo{
+    border-radius: 2vh;
+    height: 100%;
+    width: 30%;
+    background: rgba(138, 43, 226, 0);
+    margin-right: 2vh;
+    display: flex;
+    align-items: center;
+}
+.info img{
+    border-radius: 2vh;
+    height: 80%;
+    width: 100%;
+    background: blueviolet;
+}
+.info:hover{
+    background: #2f2f2f;
+}
+
+.blu{
+    color: deepskyblue;
+}
+
+.container img{
+    width: 10%;
+    min-height: 5vh;
+    height: 50px;
+    margin-left: 30px;
+}
+.container .icon-texto{
+    background: black;
+    border-radius: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.container .icon-texto:hover{
+    background: #282828;
+}
+.container .icon-texto img{
+    margin-left: 4vh ;
+}
+.container .logo{
+    align-self: flex-start ;
+    margin-left: 7.5vh;
+    margin-bottom: 2vh;
+
+}
+.boton{
+    background: dodgerblue;
+    border-radius: 20vh;
+    width: 85%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-main{
+    background: black;
+    border-radius: 20vh;
+    width: 85%;
+    height: 8vh;
+    margin-top: 25px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.FOTODEPERFIL{
+    background: none;
+    width: 5vh;
+    border-radius: 50%;
+}
+.FOTODEPERFIL img{
+    width: 5vh;
+    margin: 0;
+    padding: 0;
+}
+.userName{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-main h2,h3{
+    color: whitesmoke;
+    margin: 0;
+}
+.user-main:hover{
+    background: #282828;
+}
+
+.header_inicio{
+
+    width: 100%;
+    height: 10%;
+    background: black;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header_inicio h1{
+    color: white;
+    font-family: Arial,monospace;
+    font-size: 3vh;
+}
+
+
+@media (max-width: 160vh) {
+    .search{
+        display: none;
+    }
+
+    .news{
+        width: 75%;
+    }
+
+    .container{
+        min-width: 10%;
+        gap: 5px;
+    }
+
+    .container .logo{
+        align-self: center;
+    }
+
+    .container .icon-texto{
+        width: 8vh;
+        height: 8vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .optiocontainerns .icon-texto img{
+        margin-left: 0;
+    }
+
+    .container h1{
+        display: none;
+    }
+
+    .container img{
+        width: 60%;
+        min-height: 5vh;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    .user-main .userName{
+        display: none;
+    }
+
+    .user-main{
+        width: 8vh;
+        height: 8vh;
+        justify-content: center;
+        align-items: center;
+        background: black;
+    }
+
+    .boton{
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .moreUser{
+        display: none;
+    }
+
+    .FOTODEPERFIL{
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .FOTODEPERFIL .userImage{
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .container .logo{
+
+        margin-left: 15px ;
+        width: 5vh;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 110vh) {
+
+    .container{
+        display: none;
+    }
+
+    .news{
+        width: 100%;
+    }
+}
